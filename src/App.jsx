@@ -26,7 +26,7 @@ export default function App() {
 
   return (
     <>
-    <div className="App">
+    <div>
       {error ? (
         <div className="error-message">Data fetching failed</div>
       ) : (
