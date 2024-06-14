@@ -26,23 +26,23 @@ export default function App() {
 
   return (
     <>
-    <div>
-      {error ? (
-        <div className="error-message">Data fetching failed</div>
-      ) : (
-        <ul style={{ listStyleType: "none", padding: 0 }}>
-          <h1>Posts</h1>
-          {posts.map((post, index) => (
-            <li key={post.id}>
-              <h2>
-                {index + 1}. {post.title}
-              </h2>
-              <p>{post.body}</p>
-            </li>
-          ))}
-        </ul>
-     )}
-   </div>
+      <div>
+        {error ? (
+          <div className="error-message">Data fetching failed</div>
+        ) : (
+          <ul style={{ listStyleType: "none", padding: 0 }}>
+            <h1>Posts</h1>
+            {posts.map((post, index) => (
+              <li key={post.id}>
+                <h2>
+                  {index + 1}. {post.title}
+                </h2>
+                <p>{post.body}</p>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </>
   );
 }
